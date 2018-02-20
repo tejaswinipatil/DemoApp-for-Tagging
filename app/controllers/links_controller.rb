@@ -2,7 +2,7 @@ class LinksController < ApplicationController
   before_action :set_link, only: [:show, :edit, :update, :destroy]
    helper_method :sort_column, :sort_direction
 
-  #
+  
   # GET /links
   # GET /links.json
    def index
