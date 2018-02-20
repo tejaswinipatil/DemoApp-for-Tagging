@@ -1,0 +1,9 @@
+//= require jquery
+//= require bootstrap-sprockets
+//= require jquery-ui
+//= require jquery_ujs
+//= require jquery.easing.min
+//= require scrollreveal.min
+//= require creative.min
+//= require common
+//= require home_page

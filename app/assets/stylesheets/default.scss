@@ -1,0 +1,107 @@
+.app.app-default {
+  aside.app-sidebar {
+    background-color: #FFF;
+    .sidebar-header .sidebar-brand .highlight {
+      background-color: #f7941e;
+    }
+    .sidebar-menu ul.sidebar-nav > li {
+      > a {
+        .icon {
+          background-color: rgba(141, 146, 147, 0.15);
+          color: rgba(141, 146, 147, 0.45);
+        }
+        .title {
+          color: #8d9293;
+        }
+      }
+      &.active > a {
+        .icon {
+          background-color: #FFF3E0;
+          color: #f7941e;
+        }
+        .title {
+          color: #f7941e;
+        }
+      }
+      &.dropdown {
+        > .dropdown-menu > ul > li.section {
+          color: #f7941e;
+        }
+        &.open > a:after {
+          border-right-color: #FFF;
+        }
+      }
+    }
+    .sidebar-footer {
+      border-top-color: rgba(0, 0, 0, 0.1);
+      background-color: #FFF;
+      ul.menu > li.dropdown .dropdown-menu {
+        border-bottom-color: #f7941e;
+      }
+    }
+  }
+  .navbar {
+    .navbar-header .navbar-brand .highlight, .navbar-mobile .navbar-brand .highlight {
+      background-color: #f7941e;
+    }
+  }
+  .ct-series-a {
+    .ct-bar, .ct-line, .ct-point {
+      stroke: #f7941e;
+    }
+    .ct-area {
+      fill: #f7941e;
+    }
+    .ct-slice-pie {
+      fill: #f7941e;
+      stroke: #FFF;
+      stroke-width: 3;
+    }
+    .ct-slice-donut {
+      stroke: #f7941e;
+    }
+  }
+  .ct-series-b {
+    .ct-bar, .ct-line, .ct-point {
+      stroke: #39c3da;
+    }
+    .ct-area {
+      fill: #39c3da;
+    }
+    .ct-slice-pie {
+      fill: #39c3da;
+      stroke: #FFF;
+      stroke-width: 3;
+    }
+    .ct-slice-donut {
+      stroke: #39c3da;
+    }
+  }
+  .ct-series-a:after {
+    background-color: #f7941e;
+  }
+  .ct-series-b:after {
+    background-color: #39c3da;
+  }
+  .card-banner .ct-series-a {
+    .ct-bar, .ct-line, .ct-point {
+      stroke: #FFF;
+    }
+    .ct-area {
+      fill: #FFF;
+    }
+    .ct-slice-pie {
+      fill: white;
+      stroke: #FFF;
+      stroke-width: 3;
+    }
+    .ct-slice-donut {
+      stroke: #FFF;
+    }
+  }
+  .card.card-tab {
+    .card-header > ul > li.active a, ul.nav-tabs > li.active a, > .ng-isolate-scope > .nav-tabs > li.active a {
+      color: #f7941e;
+    }
+  }
+}

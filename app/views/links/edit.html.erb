@@ -1,0 +1,64 @@
+<!-- Bootstrap code -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flat Admin V.3 - Free flat-design bootstrap administrator templates</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="../assets/css/vendor.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/flat-admin.css">
+
+  <!-- Theme -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/theme/blue-sky.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/theme/blue.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/theme/red.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/theme/yellow.css">
+
+</head>
+<body>
+<div class="app app-default">
+
+<%= render 'shared/sidebar' %>
+
+<script type="text/ng-template" id="sidebar-dropdown.tpl.html">
+  <div class="dropdown-background">
+    <div class="bg"></div>
+  </div>
+  <div class="dropdown-container">
+    {{list}}
+  </div>
+</script>
+
+<%= render 'shared/nav_bar' %>
+ <div class="row">
+
+<div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <b> Edit the Link </b>
+        </div> 
+        <div class="card-body">
+          <div class="row">
+  					<div class="col-md-6">
+          		<%= render 'form', link: @link %>
+        		</div>
+      		</div>
+    		</div>
+  		</div>
+</div>
+ </div>
+ </div>
+  <script type="text/javascript" src="../assets/js/vendor.js"></script>
+  <script type="text/javascript" src="../assets/js/app.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

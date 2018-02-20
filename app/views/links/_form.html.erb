@@ -1,0 +1,33 @@
+
+  <% if link.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(link.errors.count, "error") %> prohibited this link from being saved:</h2>
+
+      <ul>
+      <% link.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<%= form_with(model: link, local: true) do |form| %>
+  <div class="input-group">
+    <span  id="basic-addon1">
+      <i  aria-hidden="true"></i></span>
+      <%= form.text_field :link_url, id: :link_link_url,:class => "form-control",:placeholder => "Link Url" %>
+  </div>
+  <div class="input-group">
+    <span  id="basic-addon2">
+        <i  aria-hidden="true"></i></span>
+          <%= form.text_field :subject, id: :subject,:class => "form-control",:placeholder => "Link Subject" %>  
+  </div>
+  <div class="input-group">
+    <span  id="basic-addon2">
+        <i  aria-hidden="true"></i></span>
+          <%= form.text_field :tag_list, id: :tag_list,:class => "form-control",:placeholder => "Add , separeated Tags" %>  
+  </div>
+  <div>
+    <%= form.submit "Submit",:class => "btn btn-success btn-submit" %>
+  </div>
+<%end%>
